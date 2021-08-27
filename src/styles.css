@@ -1,0 +1,107 @@
+h1 {
+  text-align: center;
+  margin-left: 100px;
+  padding: 20px 20px;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Quicksand", sans-serif;
+  border: 3px solid whitesmoke;
+  border-radius: 40px;
+  width: 200px;
+  height: 150px;
+}
+h2 {
+  font-size: 20px;
+  text-align: left;
+  font-family: "Quicksand", sans-serif;
+  font-weight: lighter;
+}
+hr {
+  border-top: solid black;
+  border-radius: px;
+}
+.enterCity {
+  margin-left: 400px;
+}
+.current-information {
+  font-size: 40px;
+  text-align: left;
+  margin-right: 50px;
+  font-family: "Quicksand", sans-serif;
+}
+.card-structure {
+  display: block;
+  margin: 100px auto;
+  border: 3px solid #9cd3d3;
+  padding: 20px 40px;
+  margin-top: 10px 10px;
+  max-width: 1000px;
+  min-width: 400px;
+  border-radius: 30px;
+  background-color: #b6e1e0;
+  box-shadow: 4px 4px 1px 1px rgba(107, 137, 150, 0.2);
+}
+.form-control {
+  display: block;
+  text-align: center;
+  border-color: #9cd3d3;
+  margin-left: 400px;
+  border-radius: 10px;
+  padding: 10px 40px;
+  font-size: 20px;
+  font-family: "Quicksand", sans-serif;
+}
+.searchBtn {
+  color: black;
+  background-color: whitesmoke;
+  margin-left: 650px;
+  max-width: 100px;
+  border-color: #d9dad7;
+  border-radius: 5px;
+  transition: all 200ms ease;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: "Quicksand", sans-serif;
+}
+.searchBtn:hover {
+  background-color: #e7eaf6;
+  border: #d9dad7;
+}
+.currentPositionBtn {
+  background-color: whitesmoke;
+  margin-left: 650px;
+  max-width: 400px;
+  border-color: #d9dad7;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: "Quicksand", sans-serif;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.week-structure {
+  display: block;
+  border: 3px solid whitesmoke;
+  border-radius: 10px;
+  margin: 40px 5px;
+  width: 800px;
+  height: 100px;
+  margin-right: 200px;
+}
+.emoji {
+  font-size: 25px;
+  text-align: center;
+}
+.week {
+  font-size: 18px;
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+}
+.current-information {
+  font-size: 20px;
+  list-style: none;
+  font-family: "Quicksand", sans-serif;
+}

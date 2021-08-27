@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link href="src/styles.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+      <div class="structure">
+          <div class="card-structure">
+            <div class="container">
+                <form id= "search-form">
+                    <div class="row">
+                      <div class="col-6">
+                        <div class="mb-3">
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Please enter a city"
+                            id="enterCity"
+                          />
+                        </div>
+                      </div>
+                      <br>
+                      <div class="row">
+                        <button type="submit" class="searchBtn" id="searchInput">Search</button>
+                      </div>
+                      <br>
+                      <div class="row">
+                      <button type="click" class="searchBtn" id="currentPosition">Current</button> 
+                      </div>
+                      <div class="row"></div>
+                    </div>
+                    <br>
+                  </form>
+                <div class="row">
+                  <div class="col current-display">
+                    <span class="daily">
+                    <header class="flex">
+                    <h1 class="current-temp">
+                      <span class="current-temp" id="temperature">24</span>
+                      °C
+                      <hr>
+                      <span> 
+                        <h3 class="card-title" id="place"> Waipahu </h3> 
+                      </span>
+                    </h1>
+                    <br/>
+                      <ul class="current-information">
+                      <li>Current Day: 
+                        <h2> </h2> 
+                      </li>
+                      <li>Feels like: 88°F</li>
+                      <li>Current Time: 2:00pm</li>
+                      <li>Sunrise: 6:05am | Sunset: 7:10pm</li>
+                    </ul>
+                  </header>
+                  <div class="week-structure">
+                      <div class="emoji">
+                          <div class="row" >
+                           <div class="col">⛅</div>
+                           <div class="col">☁</div>
+                           <div class="col">☀️</div>
+                           <div class="col">☀️</div>
+                           <div class="col">☀️</div>
+                           <div class="col">☀️</div>
+                           <div class="col">☀️</div>
+                           </div>
+                           </div>
+                      <div class="week">     
+                         <div class="row" >
+                           <div class="col">Monday</div>
+                           <div class="col">Tuesday</div>
+                           <div class="col">Wednesday</div>
+                           <div class="col">Thursday</div>
+                           <div class="col">Friday</div>
+                           <div class="col">Saturday</div>
+                           <div class="col">Sunday</div>
+                           </div>
+                            <div class="row" >
+                           <div class="col">84ºF/28ºC</div>
+                           <div class="col">84ºF/28ºC</div>
+                           <div class="col">84ºF/28ºC</div>
+                           <div class="col">84ºF/28ºC</div>
+                           <div class="col">84ºF/28ºC</div>
+                           <div class="col">84ºF/28ºC</div>
+                           <div class="col">86ºF/28ºC</div>
+                           </div>
+                         </div>
+                        </div>  
+                       </div>
+                      </div>
+                      </div>
+  <script src="src/index.js"></script>
+  </body>
+</html>
