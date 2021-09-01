@@ -45,7 +45,6 @@ hr {
   display: block;
   text-align: center;
   border-color: #9cd3d3;
-  margin-left: 400px;
   border-radius: 10px;
   padding: 10px 40px;
   font-size: 20px;
@@ -54,8 +53,7 @@ hr {
 .searchBtn {
   color: black;
   background-color: whitesmoke;
-  margin-left: 650px;
-  max-width: 100px;
+  max-width: 400px;
   border-color: #d9dad7;
   border-radius: 5px;
   transition: all 200ms ease;
@@ -69,7 +67,6 @@ hr {
 }
 .currentPositionBtn {
   background-color: whitesmoke;
-  margin-left: 650px;
   max-width: 400px;
   border-color: #d9dad7;
   border-radius: 5px;
