@@ -8,7 +8,7 @@ hour = hour ? hour : 12;
 
 let minutes = date.getMinutes();
 minutes = minutes < 10 ? "0" + minutes : minutes;
-let days = ["Sun.", "Mon.", "Tues.", "Wed.", "Thurs.", "Fri.", "Sat."];
+let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 let day = days[date.getDay()];
 
 let months = [
@@ -27,7 +27,7 @@ let months = [
 ];
 let month = months[date.getMonth()];
 
-let currentDateTime = document.querySelector("#time-date");
+let currentDateTime = document.querySelector("#current-info");
 currentDateTime.innerHTML = `Last Updated: ${day}, ${month} ${today}  at ${hour}:${minutes} ${ampm}`;
 
 function formatDate(timestamp) {
@@ -73,7 +73,7 @@ function displayForecast(response) {
       forecastHTML =
         forecastHTML +
         `
-      <div class="col-2" >      
+      <div class="col-3" >      
                   <div class="forecast-day">${displayDay(forecastDay.dt)}</div>
                   <div class="forecast-weather-image"><img src="http://openweathermap.org/img/wn/${
                     forecastDay.weather[0].icon
