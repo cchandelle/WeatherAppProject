@@ -147,7 +147,7 @@ function search(city) {
   axios.get(apiUrl).then(displayForecastElements);
 }
 
-function handleSubmit(event) {
+function submit(event) {
   event.preventDefault();
   let cityInputElement = document.querySelector("#enterCity");
   search(cityInputElement.value);
