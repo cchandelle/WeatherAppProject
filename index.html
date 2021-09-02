@@ -48,7 +48,7 @@
                     <span class="daily">
                     <header class="flex">
                     <h1 class="current-temp">
-                      <span class="emoji">☀️</span>
+                      <span class="currentIcon">☀️</span>
                     <br>
                       <span class="current-temp" id="temperature">24</span>
                       °C
@@ -62,49 +62,16 @@
                       <li>Current Day: 
                         <h2> </h2> 
                       </li>
+                      <li><span id="description"></span></li>
                       <li>Precipitation: <span id="precipitation"></span>%</li>
                       <li>Wind: <span id="wind"></span> km</li>
                     </ul>
                   </header>
-                  <div class="week-structure">
-                      <div class="emoji">
-                          <div class="row" >
-                           <div class="col">⛅</div>
-                           <div class="col">☁</div>
-                           <div class="col">☀️</div>
-                           <div class="col">☀️</div>
-                           <div class="col">☀️</div>
-                           <div class="col">☀️</div>
-                           <div class="col">☀️</div>
-                           </div>
-                           </div>
-                      <div class="week">     
-                         <div class="row" >
-                           <div class="col">Monday</div>
-                           <div class="col">Tuesday</div>
-                           <div class="col">Wednesday</div>
-                           <div class="col">Thursday</div>
-                           <div class="col">Friday</div>
-                           <div class="col">Saturday</div>
-                           <div class="col">Sunday</div>
-                           </div>
-                           <div class = "weekForecast">
-                            <div class="row" >
-                           <div class="col">84ºF/28ºC</div>
-                           <div class="col">84ºF/28ºC</div>
-                           <div class="col">84ºF/28ºC</div>
-                           <div class="col">84ºF/28ºC</div>
-                           <div class="col">84ºF/28ºC</div>
-                           <div class="col">84ºF/28ºC</div>
-                           <div class="col">86ºF/28ºC</div>
-                           </div>
-                           </div>
-                         </div>
-                        </div>  
-                       </div>
-                      </div>
-                      </div>
-                      <small>This is an <a href="https://github.com/cchandelle/WeatherAppProject" target="_blank">open-source code</a>
+                  <div class="weather-forecast" id="forecast">
+            <div class="row"></div>
+          </div>
+        </div>
+        <small>This is an <a href="https://github.com/cchandelle/WeatherAppProject" target="_blank">open-source code</a>
                      by Chandelle and hosted by Netlify</small>
   <script src="src/index.js"></script>
   </body>
