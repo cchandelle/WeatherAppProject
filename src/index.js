@@ -81,16 +81,16 @@ function displayForecast(response) {
       forecastHTML =
         forecastHTML +
         `
-      <div class="col-3" >      
+      <div class="col" >      
                   <div class="forecast-day">${displayDay(forecastDay.dt)}</div>
                   <div class="forecast-weather-image"><img src="http://openweathermap.org/img/wn/${
                     forecastDay.weather[0].icon
                   }@2x.png" alt="Weather-Icon" id="forecast-image"/></div>
                   <div class="forecast-highlow"><span class="forecast-high">${Math.round(
                     forecastDay.temp.max
-                  )}°</span><span class="forecast-low"> ${Math.round(
+                  )}°F | </span><span class="forecast-low"> ${Math.round(
           forecastDay.temp.min
-        )}°</span></div>   
+        )}°F</span></div>   
           </div>
         `;
     }
@@ -110,15 +110,15 @@ function getForecast(coordinates) {
 function displayForecastElements(response) {
   let tempElement = Math.round(response.data.main.temp);
   let insertTemp = document.querySelector("#temperature");
-  insertTemp.innerHTML = `${tempElement} °`;
+  insertTemp.innerHTML = `${tempElement} `;
 
   let descriptionElement = response.data.weather[0].description;
   let insertDescription = document.querySelector("#current-info");
-  insertDescription.innerHTML = `${descriptionElement} °F`;
+  insertDescription.innerHTML = `${descriptionElement}`;
 
   let feelsLikeElement = Math.round(response.data.main.feels_like);
   let insertFeelsLike = document.querySelector("#feels-like");
-  insertFeelsLike.innerHTML = `${feelsLikeElement} `;
+  insertFeelsLike.innerHTML = `${feelsLikeElement} °F`;
 
   let humidityElement = response.data.main.humidity;
   let insertHumidity = document.querySelector("#current-humidity");
