@@ -1,10 +1,10 @@
 h1 {
   text-align: center;
-  margin-left: 100px;
-  padding: 20px 20px;
-  font-size: 45px;
+  margin-left: 60px;
+  font-size: 35px;
   font-family: "Quicksand", sans-serif;
   border: 3px solid whitesmoke;
+  padding: 51px 20px;
   border-radius: 40px;
   width: 320px;
   height: 300px;
@@ -23,17 +23,16 @@ hr {
   margin-left: 400px;
 }
 .current-information {
-  display: block;
-  margin: 100px auto;
-  text-align: center;
-  font-size: 26px;
+  display: inline-block;
+  text-align: left;
+  font-size: 24px;
   list-style: none;
   font-family: "Quicksand", sans-serif;
-  width: 320px;
+  width: 460px;
   border: 3px solid whitesmoke;
   border-radius: 40px;
-  padding: 20px 20px;
-  height: 270px;
+  padding: 53px 30px;
+  height: 300px;
 }
 .card-structure {
   display: block;

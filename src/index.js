@@ -36,7 +36,7 @@ let months = [
 let month = months[date.getMonth()];
 
 let currentDateTime = document.querySelector("#current-info");
-currentDateTime.innerHTML = `Last Updated: ${day}, ${month} ${today}  at ${hour}:${minutes} ${ampm}`;
+currentDateTime.innerHTML = `${day}, ${month} ${today}  at ${hour}:${minutes} ${ampm}`;
 
 function formatDate(timestamp) {
   let date = new Date(timestamp);
@@ -113,7 +113,7 @@ function displayForecastElements(response) {
   insertTemp.innerHTML = `${tempElement} `;
 
   let descriptionElement = response.data.weather[0].description;
-  let insertDescription = document.querySelector("#current-info");
+  let insertDescription = document.querySelector("#looks-like");
   insertDescription.innerHTML = `${descriptionElement}`;
 
   let feelsLikeElement = Math.round(response.data.main.feels_like);
