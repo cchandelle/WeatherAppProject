@@ -90,7 +90,7 @@ function displayForecast(response) {
                     forecastDay.temp.max
                   )}°F | </span><span class="forecast-low"> ${Math.round(
           forecastDay.temp.min
-        )}°F</span></div>   
+        )}°C</span></div>   
           </div>
         `;
     }
