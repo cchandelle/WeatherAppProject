@@ -8,7 +8,15 @@ hour = hour ? hour : 12;
 
 let minutes = date.getMinutes();
 minutes = minutes < 10 ? "0" + minutes : minutes;
-let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+let days = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+];
 let day = days[date.getDay()];
 
 let months = [
@@ -105,7 +113,7 @@ function displayForecastElements(response) {
   insertTemp.innerHTML = `${tempElement} °`;
 
   let descriptionElement = response.data.weather[0].description;
-  let insertDescription = document.querySelector("#current-information");
+  let insertDescription = document.querySelector("#current-info");
   insertDescription.innerHTML = `${descriptionElement} °F`;
 
   let feelsLikeElement = Math.round(response.data.main.feels_like);
@@ -132,7 +140,7 @@ function displayForecastElements(response) {
   let insertName = document.querySelector("#place");
   insertName.innerHTML = `${name}`;
 
-  let iconElement = document.querySelector("#currentIcon");
+  let iconElement = document.querySelector(".currentIcon");
   iconElement.setAttribute(
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
@@ -154,7 +162,7 @@ function submit(event) {
 }
 
 let citySearch = document.querySelector("#searchInput");
-citySearch.addEventListener("submit", handleSubmit);
+citySearch.addEventListener("submit", submit);
 
 function showCurrentLocation(position) {
   let apiKey = "7bab658d5de8c5edabc13edc502ddea0";
