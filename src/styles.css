@@ -17,7 +17,6 @@ h3 {
 }
 hr {
   border-top: solid black;
-  border-radius: px;
 }
 .enterCity {
   margin-left: 400px;
@@ -96,6 +95,11 @@ hr {
   border-radius: 10px;
   padding: 20px 20px;
   height: 200px;
+}
+.btn {
+  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
 }
 .small {
   font-family: "Quicksand", sans-serif;
