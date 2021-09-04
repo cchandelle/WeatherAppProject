@@ -4,10 +4,10 @@ h1 {
   font-size: 35px;
   font-family: "Quicksand", sans-serif;
   border: 3px solid whitesmoke;
-  padding: 51px 20px;
+  padding: 30px 20px;
   border-radius: 40px;
   width: 320px;
-  height: 300px;
+  height: 340px;
 }
 h3 {
   font-size: 35px;
@@ -30,9 +30,9 @@ hr {
   font-family: "Quicksand", sans-serif;
   width: 460px;
   border: 3px solid whitesmoke;
+  padding: 35px 30px;
   border-radius: 40px;
-  padding: 53px 30px;
-  height: 300px;
+  height: 320px;
 }
 .card-structure {
   display: block;
