@@ -192,10 +192,10 @@ function convertCelsius(event) {
 
 let celsiusTemperature = null;
 
-let celsiusLink = document.querySelector("#celsius-link");
+let celsiusLink = document.querySelector("#celsius");
 celsiusLink.addEventListener("click", convertCelsius);
 
-let farenheitLink = document.querySelector("#farenheit-link");
+let farenheitLink = document.querySelector("#farenheit");
 farenheitLink.addEventListener("click", convertFarenheit);
 
 function search(city) {
