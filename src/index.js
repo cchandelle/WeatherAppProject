@@ -175,20 +175,28 @@ function displayTemperature(response) {
 
 function convertFarenheit(event) {
   event.preventDefault();
+  let farenheitTemperature = (17 * 9) / 5 + 32;
   let currentTemp = document.querySelector("current-temp");
-  currentTemp.innerHTML = `${farenheit}°`;
+  celsiusLink.classList.remove("active");
+  farenheitLink.classList.add("active");
+  currentTemp.innerHTML = Math.round(farenheitTemperature);
 }
 
 function convertCelsius(event) {
   event.preventDefault();
   let currentTemp = document.querySelector("current-temp");
-  currentTemp.innerHTML = `${temperature}°`;
-  let farenheit = Math.round(temperature * 1.8 + 32);
-  let farenheitLink = document.querySelector("#farenheit-link");
-  farenheitLink.addEventListener("click", convertFarenheit);
-  let celsiusLink = document.querySelector("#celsius-link");
-  celsiusLink.addEventListener("click", convertCelsius);
+  celsiusLink.classList.add("active");
+  farenheitLink.classList.remove("active");
+  currentTemp.innerHTML = Math.round(celsiusTemperature);
 }
+
+let celsiusTemperature = null;
+
+let celsiusLink = document.querySelector("#celsius-link");
+celsiusLink.addEventListener("click", convertCelsius);
+
+let farenheitLink = document.querySelector("#farenheit-link");
+farenheitLink.addEventListener("click", convertFarenheit);
 
 function search(city) {
   let apiKey = "7bab658d5de8c5edabc13edc502ddea0";
