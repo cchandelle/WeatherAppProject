@@ -36,7 +36,7 @@ let months = [
 let month = months[date.getMonth()];
 
 let currentDateTime = document.querySelector("#current-info");
-currentDateTime.innerHTML = `${day}, ${month} ${today}  at ${hour}:${minutes} ${ampm}`;
+currentDateTime.innerHTML = `${day}, ${month} ${today},  at ${hour}:${minutes} ${ampm}`;
 
 function formatDate(timestamp) {
   let date = new Date(timestamp);
