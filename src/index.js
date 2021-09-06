@@ -175,9 +175,8 @@ function displayTemperature(response) {
 
 function convertFarenheit(event) {
   event.preventDefault();
-  let farenheitTemperature = Math.round(temperature * 1.8 + 32);
+  let farenheitTemperature = (17 * 9) / 5 + 32;
   let currentTemp = document.querySelector("current-temp");
-  currentTemp.innerHTML = `${temperature}°`;
   celsiusLink.classList.remove("active");
   farenheitLink.classList.add("active");
   currentTemp.innerHTML = Math.round(farenheitTemperature);
