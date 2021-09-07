@@ -175,8 +175,7 @@ function displayTemperature(response) {
 
 function convertFarenheit(event) {
   event.preventDefault();
-  let farenheitTemperature = (17 * 9) / 5 + 32;
-  let currentTemp = document.querySelector("current-temp");
+  let currentTemp = document.querySelector("#temperature");
   celsiusLink.classList.remove("active");
   farenheitLink.classList.add("active");
   currentTemp.innerHTML = Math.round(farenheitTemperature);
@@ -184,13 +183,16 @@ function convertFarenheit(event) {
 
 function convertCelsius(event) {
   event.preventDefault();
-  let currentTemp = document.querySelector("current-temp");
+  let currentTemp = document.querySelector("#temperature");
   celsiusLink.classList.add("active");
   farenheitLink.classList.remove("active");
+  celsiusLink.setAttribute("disabled", true);
+  farenheitLink.removeAttribute("disabled");
+  let celsiusTemperature = ((farenheitTemperature - 32) * 5) / 9;
   currentTemp.innerHTML = Math.round(celsiusTemperature);
 }
 
-let celsiusTemperature = null;
+let farenheitTemperature = null;
 
 let celsiusLink = document.querySelector("#celsius");
 celsiusLink.addEventListener("click", convertCelsius);
