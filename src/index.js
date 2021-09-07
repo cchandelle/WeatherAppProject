@@ -140,6 +140,8 @@ function displayForecastElements(response) {
   let insertName = document.querySelector("#place");
   insertName.innerHTML = `${name}`;
 
+  farenheitTemperature = response.data.main.temp;
+
   let iconElement = document.querySelector(".currentIcon");
   iconElement.setAttribute(
     "src",
@@ -156,7 +158,7 @@ function displayTemperature(response) {
   let windElement = document.querySelector("#current-wind");
   let iconElement = document.querySelector("#current-icon");
 
-  celsiusTemperature = response.data.main.temp;
+  farenheitTemperature = response.data.main.temp;
 
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
   cityElement.innerHTML = response.data.name;
@@ -175,10 +177,11 @@ function displayTemperature(response) {
 
 function convertFarenheit(event) {
   event.preventDefault();
-  let farenheitTemperature = Math.round((tempElement * 9) / 5 + 32);
   let currentTemp = document.querySelector("#temperature");
   celsiusLink.classList.remove("active");
   farenheitLink.classList.add("active");
+  celsiusLink.removeAttribute("disabled");
+  farenheitLink.setAttribute("disabled", true);
   currentTemp.innerHTML = Math.round(farenheitTemperature);
 }
 
